@@ -83,19 +83,19 @@ export default function RestaurantPage() {
 
   return shell(
     <>
-      <section className="overflow-hidden rounded-2xl border border-[#e7e2da] bg-white">
+      <section className="overflow-hidden rounded-2xl border border-[#f0ddd0] bg-[#fdf1e7]">
         <div className="p-6">
           <h1 className="text-[26px] font-semibold leading-tight tracking-tight">
             {data.name}
           </h1>
           <div className="mt-2 flex items-center gap-3">
-            <span className="inline-block rounded-full border border-[#f0ddd0] bg-[#fdf4ee] px-3 py-1 text-xs font-medium text-[#c2410c]">
+            <span className="inline-block rounded-full border border-[#f0ddd0] bg-white px-3 py-1 text-xs font-medium text-[#c2410c]">
               {data.cuisine}
             </span>
             <span className="text-sm text-[#8a857c]">{data.area}</span>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-[#f3efe8] bg-[#fdfbf8] px-6 py-5">
+        <div className="flex items-center justify-between border-t border-[#f3e3d4] bg-white px-6 py-5">
           <div className="flex items-baseline gap-2">
             <span className="text-6xl font-semibold leading-none tracking-tight">
               {data.averageRating ?? "–"}
