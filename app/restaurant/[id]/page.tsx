@@ -85,9 +85,12 @@ export default function RestaurantPage() {
   return (
     <main className={shell}>
       <h1 className="text-2xl font-semibold tracking-tight">{data.name}</h1>
-      <p className="mt-1 text-sm text-[#8a857c]">
-        {data.cuisine} · {data.area}
-      </p>
+      <div className="mt-2 flex items-center gap-3">
+        <span className="inline-block rounded-full border border-[#f0ddd0] bg-[#fdf4ee] px-3 py-1 text-xs font-medium text-[#c2410c]">
+          {data.cuisine}
+        </span>
+        <span className="text-sm text-[#8a857c]">{data.area}</span>
+      </div>
 
       <div className="mt-10 flex items-baseline gap-3">
         <span className="text-7xl font-semibold leading-none tracking-tight">
